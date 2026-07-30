@@ -1,0 +1,12 @@
+s = input("Enter a string: ")
+if len(s) < 2:
+    print("Not enough characters.")
+else:
+    freq = {}
+    for char in s:
+        freq[char] = freq.get(char, 0) + 1
+    sorted_chars = sorted(freq.items(), key=lambda x: x[1], reverse=True)
+    if len(sorted_chars) < 2:
+        print("No second most frequent character.")
+    else:
+        print(f"Second most frequent character: '{sorted_chars[1][0]}'")

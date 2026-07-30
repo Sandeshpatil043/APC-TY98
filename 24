@@ -1,0 +1,9 @@
+s = input("Enter a string: ")
+if not s:
+    print("String is empty.")
+else:
+    freq = {}
+    for char in s:
+        freq[char] = freq.get(char, 0) + 1
+    most_freq = max(freq, key=freq.get)
+    print(f"Most frequent character: '{most_freq}'")

@@ -1,0 +1,10 @@
+paragraph = input("Enter a paragraph: ")
+words = paragraph.lower().split()
+freq = {}
+for word in words:
+    cleaned = "".join(c for c in word if c.isalnum())
+    if cleaned:
+        freq[cleaned] = freq.get(cleaned, 0) + 1
+print("Word frequency dictionary:")
+for word, count in freq.items():
+    print(f"'{word}': {count}")

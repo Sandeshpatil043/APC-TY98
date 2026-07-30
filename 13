@@ -1,0 +1,7 @@
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+if words:
+    shortest = min(words, key=len)
+    print(f"Shortest word: {shortest}")
+else:
+    print("No words found.")

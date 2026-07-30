@@ -1,0 +1,8 @@
+user_string = input("Enter a string: ")
+seen = set()
+duplicates = set()
+for char in user_string:
+    if char in seen:
+        duplicates.add(char)
+    seen.add(char)
+print(f"Duplicate characters: {list(duplicates)}")

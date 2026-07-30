@@ -1,0 +1,3 @@
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+print(f"Output: {' '.join(words[::-1])}")
