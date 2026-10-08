@@ -1,6 +1,5 @@
-Employee_ID,Name,Department,Experience,Salary
-1,Amit,CSE,2,45000
-2,Rahul,IT,5,60000
-3,Sneha,CSE,7,75000
-4,Priya,HR,4,55000
-5,Rohit,IT,8,80000
+Name,Salary,Experience,Department
+Sandesh,50000,3,IT
+Amit,65000,5,HR
+John,70000,4,IT
+Priya,45000,2,Sales
